@@ -1,0 +1,31 @@
+// 1. Intercambio de imágenes al hacer clic
+document.querySelectorAll('.clickable-image').forEach(image => {
+    image.addEventListener('click', function() {
+        const currentSrc = this.src;
+        if (currentSrc.includes('image1')) {
+            this.src = 'images/image2.jpg';
+        } else if (currentSrc.includes('image2')) {
+            this.src = 'images/image3.jpg';
+        } else {
+            this.src = 'images/image1.jpg';
+        }
+    });
+});
+
+// 2. Cambiar texto al escribir en el campo
+const userText = document.getElementById('userText');
+const changeableText = document.getElementById('changeableText');
+userText.addEventListener('input', function() {
+    changeableText.textContent = `Has escrito: ${this.value}`;
+});
+
+// 3. Mover un objeto
+let movingBox = document.getElementById('movingBox');
+let topPosition = 0;
+setInterval(function() {
+    topPosition += 10;
+    if (topPosition > window.innerHeight - 100) {
+        topPosition = 0;  // Reiniciar la posición
+    }
+    movingBox.style.top = topPosition + 'px';
+}, 50);
