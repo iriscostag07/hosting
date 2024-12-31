@@ -3,11 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Mi Página Web Interactiva</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <h1>¡Bienvenidos a mi página web!</h1>
-    <p>Esto es un sitio web creado con GitHub Pages.</p>
+
+    <!-- Título de la Página -->
+    <header>
+        <h1>Bienvenido a Mi Página Web</h1>
+        <p>Haz clic en las imágenes, cambia texto y mira cómo se mueve un objeto.</p>
+    </header>
+
+    <!-- Intercambio de imágenes -->
+    <section class="image-section">
+        <img src="images/image1.jpg" alt="Imagen 1" class="clickable-image" id="image1">
+        <img src="images/image2.jpg" alt="Imagen 2" class="clickable-image" id="image2">
+        <img src="images/image3.jpg" alt="Imagen 3" class="clickable-image" id="image3">
+    </section>
+
+    <!-- Campo de texto para cambiar contenido -->
+    <section class="text-change">
+        <label for="userText">Introduce un texto:</label>
+        <input type="text" id="userText" placeholder="Escribe algo aquí">
+        <p id="changeableText">Este texto cambiará cuando escribas algo en el campo.</p>
+    </section>
+
+    <!-- Objeto en movimiento -->
+    <section class="moving-object">
+        <div id="movingBox">¡Mírame mover!</div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Licencia: Creative Commons (CC)</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>
