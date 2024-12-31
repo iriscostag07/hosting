@@ -1,11 +1,72 @@
+/* Fuente distintiva */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
 h1 {
+    font-family: 'Pacifico', cursive;
+}
+
+.image-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.clickable-image {
+    width: 200px;
+    height: 150px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.clickable-image:hover {
+    transform: scale(1.1);
+}
+
+.text-change {
     text-align: center;
-    color: #333;
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.moving-object {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#movingBox {
+    width: 100px;
+    height: 100px;
+    background-color: #28a745;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+    transition: top 1s;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
 }
