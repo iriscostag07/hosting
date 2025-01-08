@@ -1,6 +1,6 @@
 html {
-    font-size: 10px;
-    font-family: 'Arial', sans-serif;
+    font-size: 50px;
+    font-family: 'Playwrite Australia SA', sans-serif;
     background-color: #87CEEB; /* Cielo claro */
 }
 
