@@ -1,6 +1,6 @@
 html {
     font-size: 10px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #87CEEB; /* Cielo claro */
 }
 
