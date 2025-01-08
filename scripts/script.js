@@ -26,7 +26,7 @@ p, li {
     font-size: 16px;
     line-height: 2;
     letter-spacing: 1px;
-    color: #4B5320; /* Verde oliva oscuro */
+    color:black ; /* Verde oliva oscuro */
 }
 ul {
     list-style-type: square;
