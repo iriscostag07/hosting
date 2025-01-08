@@ -1,6 +1,6 @@
 html {
     font-size: 10px;
-    font-family: 'Open Sans', sans-serif; /* Fuente predeterminada para todo */
+    font-family: 'Open Sans', sans-serif;
     background-color: #87CEEB; /* Cielo claro */
 }
 
@@ -11,8 +11,8 @@ body {
     padding: 20px;
     border: 5px solid #2E8B57; /* Verde bosque */
     border-radius: 10px;
-}
 
+}
 h1 {
     margin: 0;
     padding: 20px 0;
@@ -20,19 +20,17 @@ h1 {
     text-shadow: 2px 2px 5px #000;
     text-align: center;
     font-size: 60px;
-    font-family: 'Courier New', monospace; /* Fuente personalizada solo para h1 */
-}
 
+}
 p, li {
     font-size: 16px;
     line-height: 2;
     letter-spacing: 1px;
-    color: white; /* Verde oliva oscuro */
-    font-family: 'Georgia', serif; /* Fuente personalizada solo para párrafos y listas */
+    color: #4B5320; /* Verde oliva oscuro */
 }
-
 ul {
     list-style-type: square;
+
     padding-left: 20px;
 }
 
