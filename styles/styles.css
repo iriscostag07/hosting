@@ -7,35 +7,46 @@ body {
     margin: 0;
     background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/ChampiEnForet.jpg/1280px-ChampiEnForet.jpg') no-repeat center center fixed;
     background-size: cover;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fuente llamativa */
     color: black;
 }
 
-#cuadrado {
-    width: 50px;
-    height: 50px;
-    background-color: #3498db;
-    position: absolute;
+h1 {
+    font-size: 70px; /* Fuente más grande para el título */
+    font-weight: bold;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
+    color: #2E8B57; /* Verde bosque */
+}
+
+p {
+    font-size: 24px; /* Fuente más grande para los párrafos */
+    line-height: 1.8;
+}
+
+ul {
+    font-size: 22px; /* Fuente más grande para las listas */
+    margin-top: 10px;
+    padding-left: 30px;
 }
 
 input[type="text"] {
-    padding: 10px;
+    padding: 15px;
     margin-top: 20px;
-    font-size: 16px;
+    font-size: 20px; /* Fuente más grande */
     border: none;
     border-radius: 5px;
 }
 
 #textoUsuario {
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 24px; /* Fuente más grande para el texto del usuario */
     color: #fff;
 }
 
 button {
     margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 15px 30px; /* Botón más grande */
+    font-size: 20px; /* Fuente más grande */
     background-color: #3498db;
     color: #fff;
     border: none;
@@ -45,4 +56,11 @@ button {
 
 button:hover {
     background-color: #2980b9;
+}
+
+#cuadrado {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    position: absolute;
 }
