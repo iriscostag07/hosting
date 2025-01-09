@@ -5,7 +5,7 @@ body {
     flex-direction: column;
     height: 100vh;
     margin: 0;
-    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Forest_path_in_the_fog.jpg/1280px-Forest_path_in_the_fog.jpg') no-repeat center center fixed; /* Imagen de fondo */
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/ChampiEnForet.jpg/1280px-ChampiEnForet.jpg') no-repeat center center fixed; /* Imagen de fondo */
     background-size: cover;
     font-family: 'Comic Sans MS', cursive, sans-serif; /* Fuente llamativa */
     color: black;
