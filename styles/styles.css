@@ -1,44 +1,48 @@
-html {
-    font-size: 60px; /* Tamaño de fuente más grande */
-    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fuente llamativa */
-    background-color: #87CEEB; /* Cielo claro */
-}
-
 body {
-    width: 700px; /* Más ancho */
-    margin: 0 auto;
-    background-color: #F5FFFA; /* Blanco menta */
-    padding: 30px; /* Más espacio */
-    border: 8px solid #2E8B57; /* Verde bosque */
-    border-radius: 15px;
-}
-
-h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
     margin: 0;
-    padding: 30px 0;
-    color: #2E8B57;
-    text-shadow: 3px 3px 7px #000;
-    text-align: center;
-    font-size: 80px; /* Tamaño de fuente más grande */
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/ChampiEnForet.jpg/1280px-ChampiEnForet.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    color: black;
 }
 
-p, li {
-    font-size: 20px; /* Aumentado para mayor legibilidad */
-    line-height: 2.5;
-    letter-spacing: 1.2px;
-    color: black; /* Texto oscuro */
+#cuadrado {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    position: absolute;
 }
 
-ul {
-    list-style-type: square;
-    padding-left: 30px; /* Más espacio para las viñetas */
+input[type="text"] {
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
 }
 
-img {
-    display: block;
-    margin: 30px auto;
-    max-width: 100%;
-    height: auto;
-    border: 5px solid #2E8B57; /* Más grueso */
-    border-radius: 15px; /* Más redondeado */
+#textoUsuario {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
 }
