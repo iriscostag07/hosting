@@ -1,44 +1,44 @@
 html {
-    font-size: 50px;
-    font-family: 'Playwrite Australia SA', sans-serif;
+    font-size: 60px; /* Tamaño de fuente más grande */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fuente llamativa */
     background-color: #87CEEB; /* Cielo claro */
 }
 
 body {
-    width: 600px;
+    width: 700px; /* Más ancho */
     margin: 0 auto;
     background-color: #F5FFFA; /* Blanco menta */
-    padding: 20px;
-    border: 5px solid #2E8B57; /* Verde bosque */
-    border-radius: 10px;
+    padding: 30px; /* Más espacio */
+    border: 8px solid #2E8B57; /* Verde bosque */
+    border-radius: 15px;
 }
 
 h1 {
     margin: 0;
-    padding: 20px 0;
+    padding: 30px 0;
     color: #2E8B57;
-    text-shadow: 2px 2px 5px #000;
+    text-shadow: 3px 3px 7px #000;
     text-align: center;
-    font-size: 60px;
+    font-size: 80px; /* Tamaño de fuente más grande */
 }
 
 p, li {
-    font-size: 16px;
-    line-height: 2;
-    letter-spacing: 1px;
-    color: black; /* Verde oliva oscuro */
+    font-size: 20px; /* Aumentado para mayor legibilidad */
+    line-height: 2.5;
+    letter-spacing: 1.2px;
+    color: black; /* Texto oscuro */
 }
 
 ul {
     list-style-type: square;
-    padding-left: 20px;
+    padding-left: 30px; /* Más espacio para las viñetas */
 }
 
 img {
     display: block;
-    margin: 20px auto;
+    margin: 30px auto;
     max-width: 100%;
     height: auto;
-    border: 3px solid #2E8B57;
-    border-radius: 10px;
+    border: 5px solid #2E8B57; /* Más grueso */
+    border-radius: 15px; /* Más redondeado */
 }
