@@ -1,44 +1,42 @@
-html {
-    font-size: 50px;
-    font-family: 'Playwrite Australia SA', sans-serif;
-    background-color: #87CEEB; /* Cielo claro */
+function cambiarImagen() {
+    var imagen = document.getElementById("imagen");
+    
+    // Cambiar la imagen cuando se hace clic
+    if (imagen.src.includes("Bow_Lake_beim_Icefields_Parkway.jpg")) {
+        imagen.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Opal_Pool_YNP2_filtered_noise.jpg/1280px-Opal_Pool_YNP2_filtered_noise.jpg";
+    } else {
+        imagen.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Bow_Lake_beim_Icefields_Parkway.jpg/1920px-Bow_Lake_beim_Icefields_Parkway.jpg";
+    }
 }
 
-body {
-    width: 600px;
-    margin: 0 auto;
-    background-color: #F5FFFA; /* Blanco menta */
-    padding: 20px;
-    border: 5px solid #2E8B57; /* Verde bosque */
-    border-radius: 10px;
-
-}
-h1 {
-    margin: 0;
-    padding: 20px 0;
-    color: #2E8B57;
-    text-shadow: 2px 2px 5px #000;
-    text-align: center;
-    font-size: 60px;
-
-}
-p, li {
-    font-size: 16px;
-    line-height: 2;
-    letter-spacing: 1px;
-    color:black ; /* Verde oliva oscuro */
-}
-ul {
-    list-style-type: square;
-
-    padding-left: 20px;
+// Función para cambiar el texto de bienvenida
+function cambiarTexto() {
+    var nombre = document.getElementById("nombreUsuario").value;
+    var textoUsuario = document.getElementById("textoUsuario");
+    if (nombre) {
+        textoUsuario.textContent = "¡Hola, " + nombre + "!";
+    } else {
+        textoUsuario.textContent = "¡Hola, visitante!";
+    }
 }
 
-img {
-    display: block;
-    margin: 20px auto;
-    max-width: 100%;
-    height: auto;
-    border: 3px solid #2E8B57;
-    border-radius: 10px;
+// Movimiento del cuadrado
+var cuadrado = document.getElementById("cuadrado");
+var posX = 0;
+var velocidad = 2; // Velocidad del movimiento en píxeles
+
+function moverCuadrado() {
+    posX += velocidad;
+    cuadrado.style.left = posX + 'px';
+
+    // Si el cuadrado llega al borde derecho de la pantalla, vuelve al inicio
+    if (posX > window.innerWidth) {
+        posX = -50; // Comienza desde fuera de la pantalla a la izquierda
+    }
+
+    // Llamamos la función repetidamente
+    requestAnimationFrame(moverCuadrado);
 }
+
+// Iniciar el movimiento del cuadrado
+moverCuadrado();
