@@ -3,7 +3,7 @@ function cambiarImagen() {
     
     // Cambiar la imagen cuando se hace clic
     if (imagen.src.includes("Bow_Lake_beim_Icefields_Parkway.jpg")) {
-        imagen.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Opal_Pool_YNP2_filtered_noise.jpg/1280px-Opal_Pool_YNP2_filtered_noise.jpg"; // Nueva imagen
+        imagen.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Bow_Lake_beim_Icefields_Parkway.jpg/1920px-Bow_Lake_beim_Icefields_Parkway.jpg"; // Nueva imagen
     } else {
         imagen.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Bow_Lake_beim_Icefields_Parkway.jpg/1920px-Bow_Lake_beim_Icefields_Parkway.jpg"; // Imagen original
     }
