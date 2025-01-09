@@ -3,9 +3,9 @@ function cambiarImagen() {
     
     // Cambiar la imagen cuando se hace clic
     if (imagen.src.includes("Bow_Lake_beim_Icefields_Parkway.jpg")) {
-        imagen.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Opal_Pool_YNP2_filtered_noise.jpg/1280px-Opal_Pool_YNP2_filtered_noise.jpg";
+        imagen.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Opal_Pool_YNP2_filtered_noise.jpg/1280px-Opal_Pool_YNP2_filtered_noise.jpg"; // Nueva imagen
     } else {
-        imagen.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Bow_Lake_beim_Icefields_Parkway.jpg/1920px-Bow_Lake_beim_Icefields_Parkway.jpg";
+        imagen.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Bow_Lake_beim_Icefields_Parkway.jpg/1920px-Bow_Lake_beim_Icefields_Parkway.jpg"; // Imagen original
     }
 }
 
@@ -38,5 +38,23 @@ function moverCuadrado() {
     requestAnimationFrame(moverCuadrado);
 }
 
-// Iniciar el movimiento del cuadrado
+// Movimiento del objeto circular
+var objeto = document.getElementById("objetoMovible");
+var posY = 0;
+var velocidadObjeto = 3; // Velocidad en píxeles
+
+function moverObjeto() {
+    posY += velocidadObjeto;
+    objeto.style.top = posY + 'px';
+
+    // Si el objeto llega al borde inferior, vuelve al inicio
+    if (posY > window.innerHeight) {
+        posY = -50; // Comienza desde fuera de la pantalla en la parte superior
+    }
+
+    requestAnimationFrame(moverObjeto);
+}
+
+// Iniciar el movimiento
 moverCuadrado();
+moverObjeto();
